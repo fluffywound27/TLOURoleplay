@@ -1,0 +1,93 @@
+header {
+  background-image: url(../Pictures/DayZ_Promoart_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+/* LOGO Style */
+.logo {
+  width: 30%;
+  padding: 1em;
+}
+.logo img {
+  width: 100%;
+  min-width: 120px;
+}
+/* Navigation Bar Style */
+.desktop-nav {
+  background-color: rgba(20, 20, 20, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, rgba(20,20,20,0.6) 30%, rgba(20,20,20,0) 50%, rgba(255,255,255,0) 100%);
+}
+.nav-button {
+  color: rgb(250, 204, 94);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.2em 0.6em;
+  border: none;
+  background: none;
+  text-shadow: 3px 3px 4px rgba(20, 20, 20, 0.7);
+  transition: 0.15s;
+}
+.nav-button:hover {
+  background-color: rgba(20, 20, 20,0.8);
+  color: white;
+  cursor: pointer;
+}
+.nav-button:active {
+  background-color: rgb(20, 20, 20);
+  color: rgb(247, 222, 166);
+  cursor: pointer;
+}
+/* Title Style */
+.secondary-header{
+  display: flex;
+  align-items: end;
+  height: 350px;
+}
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(20, 20, 20, 0.9);
+  width: 100%;
+  background: linear-gradient(90deg, rgba(20,20,20,0.1) 0%, rgba(20,20,20,0.9) 50%, rgba(20,20,20,0.1) 100%);
+}
+/* Media Querys*/
+/* VIEWPORT 900PX */
+@media (max-width: 900px) {
+  .desktop-nav {
+    visibility: hidden;
+  }
+  .nav-button {
+    font-size: 1.6rem;
+    margin-top: .5em;
+  }
+}
+/* VIEWPORT 650PX */
+@media (max-width: 650px) {
+  .page-title{
+    font-size: 2.5em;
+  }
+}
+/* VIEWPORT 500PX */
+@media (max-width: 500px) {
+  .page-title{
+    font-size: 2em;
+  }
+  .nav-button {
+    font-size: 1.25rem;
+  }
+}
+/* VIEWPORT 400PX */
+@media (max-width: 400px) {
+  .page-title{
+    font-size: 1.5em;
+  }
+  .nav-button {
+    font-size: .6rem;
+  }
+}

@@ -1,0 +1,113 @@
+/* Upper footer section */
+.social-platforms {
+  display: flex;
+  justify-content: center;
+}
+.social-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(250 204 94);
+}
+.social-bar p {
+  padding: 1em 0 0 0 ;
+  font-size: 1.6rem;
+  color: black;
+  min-width: 500px;
+  max-width: 35%;
+}
+.footer-join-button {
+  color: rgb(250 204 94);
+  background-color: rgb(25, 25, 25);
+  border: none;
+  padding: 1.1em;
+  margin: 1em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.15s;
+}
+.footer-join-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.footer-join-button:active {
+  opacity: 0.5;
+}
+/* Lower footer section */
+.extra-info {
+  padding: 1em 2em 1.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(196, 137, 0);
+}
+.server-info h2, .server-info p {
+  color: rgb(20,20,20);
+  font-weight: bold;
+  margin: 0;
+}
+.server-info h2 {
+  font-size: 1.5rem;
+}
+.game-platforms {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.game-platforms img {
+  width: 100%;
+  min-width: 100px;
+  object-fit: cover;
+}
+/* Media Querys*/
+/* VIEWPORT 650PX */
+@media (max-width: 650px) {
+  .footer-join-button {
+    font-size: 1rem;
+  }
+  .social-bar p {
+    min-width: 340px;
+    font-size: 1.1rem; 
+  }
+  .server-info h2 {
+    font-size: 1.1rem;
+  }
+  .server-info p {
+    font-size: .8em;
+  }
+}
+/* VIEWPORT 500PX */
+@media (max-width: 500px) {
+  .footer-join-button {
+    font-size: .9rem;
+  }
+  .social-bar p {
+    min-width: 350px;
+    font-size: 1rem;
+  }
+  .server-info h2 {
+    font-size: 1rem;
+  }
+  .server-info p {
+    font-size: 0.75rem;
+  }
+}
+/* VIEWPORT 400PX */
+@media (max-width: 400px) {
+  .footer-join-button {
+    font-size: 0.8rem;
+  }
+  .social-bar p {
+    min-width: 280px;
+    font-size: .75rem;
+  }
+  .server-info h2 {
+    font-size: .95rem;
+    font-weight: bold;
+  }
+  .server-info p {
+    font-size: 0.6rem;
+  }
+}
