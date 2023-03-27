@@ -5,8 +5,24 @@ main {
   background-color: rgb(25,25,25);
 }
 .wrapper {
-  padding: 2em 1em;
+  padding: 2em 2em;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*In-content button */
+p .in-content-button {
+  color: rgb(25,25,25);
+  background-color: rgb(250, 204, 94);
+  padding: .2em .5em;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+p .in-content-button:hover {
+  color: rgb(250, 204, 94);
+  background-color: rgba(250, 204, 94, 0.2);
+  padding: .2em .5em;
+  border-radius: 10px;
 }
 /*Content Layout A*/
 .text-content,
@@ -14,19 +30,35 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 90%;
   margin: 0 1em;
 }
 .section-title {
   margin-bottom: 1em;
-  font-size: 2rem;
+  font-size: 3rem;
 }
-.text-content p {
-  text-align: justify;
-  font-size: 1.25rem;
-  margin: 0 0 1em 0
+.text-content {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 0 1em 0;
 }
-
+.text-content p,
+.text-content li,
+.text-content ul {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 0 1em 0;
+}
+.scroll-top {
+  color: rgb(250, 204, 94);
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.scroll-top:hover {
+  opacity: 0.5;
+}
 /* Image containers */
 .image-container {
   position: relative;
@@ -36,7 +68,7 @@ main {
   width: 100%;
   object-fit: contain;
 }
-/* Image Decoration */
+/* Image Decoration and layouts */
 .lean {
   align-self: flex-end;
 }
@@ -64,23 +96,66 @@ main {
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(20,20,20,0.5) 10%, rgba(20,20,20,0.5) 85%, rgba(255,255,255,0) 100%);
   padding: 0 1em 0 0;
 }
+.float-right {
+  width: 40%;
+  float: right;
+  margin: .5em 1em;
+}
+.float-left {
+  width: 40%;
+  float: left;
+  margin: .5em 1em;
+}
+.nonflex {
+  display: block;
+  text-align: center;
+}
+.nonflex p,
+.nonflex li,
+.nonflex ul {
+  text-align: justify;
+}
+.vertical {
+  flex-direction: column;
+  align-items: center;
+}
+.resize {
+  width: 65%;
+}
+.text-content .important-message {
+  text-align: center;
+  text-transform: uppercase;
+}
+.nonflex .important-message {
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /*Media Querys */
 @media (max-width: 1500px) {
-  .text-content p{
-    font-size: 1.1rem;
+  .text-content p,
+  .text-content li,
+  .text-content ul  {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 1300px) {
-  .text-content p{
-    font-size: 1rem;
+  .text-content p,
+  .text-content li,
+  .text-content ul {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1200px) {
   .wrapper {
     flex-direction: column;
   }
-  .text-content p{
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .text-content p,
+  .text-content li,
+  .text-content ul {
     font-size: 1rem;
   }
 }
@@ -88,7 +163,9 @@ main {
   .section-title {
     font-size: 1.5rem;
   }
-  .text-content p{
+  .text-content p,
+  .text-content li,
+  .text-content ul {
     font-size: 1rem;
   }
   .header {
@@ -96,10 +173,15 @@ main {
   }
 }
 @media (max-width: 500px) {
-  .section-title {
-    font-size: 1.2rem;
+  p .in-content-button {
+    font-size: .7rem;
   }
-  .text-content p{
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .text-content p,
+  .text-content li,
+  .text-content ul {
     font-size: .8rem;
   }
   .header {
@@ -108,6 +190,6 @@ main {
 }
 @media (max-width: 400px) {
   .header {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 }

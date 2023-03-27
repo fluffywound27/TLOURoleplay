@@ -56,11 +56,6 @@
   align-items: center;
   width: 30%;
 }
-.game-platforms img {
-  width: 100%;
-  min-width: 100px;
-  object-fit: cover;
-}
 /* Media Querys*/
 /* VIEWPORT 650PX */
 @media (max-width: 650px) {

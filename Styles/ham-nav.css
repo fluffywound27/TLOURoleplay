@@ -68,10 +68,10 @@
   transition-duration: .25s;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: rgb(20, 20, 20,0.6);
 }
 @media (min-width:900px) {
   .hamburger-menu {
-    visibility: hidden;
+    display: none;
   }
 }
