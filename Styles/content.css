@@ -1,6 +1,6 @@
 /* Main and wrapper */
 main {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   background-color: rgb(25,25,25);
 }
@@ -46,7 +46,7 @@ p .in-content-button:hover {
 .text-content p,
 .text-content li,
 .text-content ul {
-  text-align: center;
+  text-align: justify;
   font-size: 1.6rem;
   margin: 0 0 1em 0;
 }
@@ -54,7 +54,7 @@ p .in-content-button:hover {
   color: rgb(250, 204, 94);
   padding: 1em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .scroll-top:hover {
   opacity: 0.5;
@@ -62,7 +62,8 @@ p .in-content-button:hover {
 /* Image containers */
 .image-container {
   position: relative;
-  width: 90%;
+  width: 100%;
+  min-width: 260px;
 }
 .image {
   width: 100%;
@@ -87,22 +88,22 @@ p .in-content-button:hover {
   bottom: 1em;
 }
 .right {
-  right: -2em;
+  right: -1.5em;
   background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(20,20,20,0.5) 10%, rgba(20,20,20,0.5) 85%, rgba(255,255,255,0) 100%);
   padding: 0 0 0 1em;
 }
 .left {
-  left: -2em;
+  left: -1.5em;
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(20,20,20,0.5) 10%, rgba(20,20,20,0.5) 85%, rgba(255,255,255,0) 100%);
   padding: 0 1em 0 0;
 }
 .float-right {
-  width: 40%;
+  width: 65%;
   float: right;
   margin: .5em 1em;
 }
 .float-left {
-  width: 40%;
+  width: 65%;
   float: left;
   margin: .5em 1em;
 }
@@ -120,7 +121,7 @@ p .in-content-button:hover {
   align-items: center;
 }
 .resize {
-  width: 65%;
+  width: 50%;
 }
 .text-content .important-message {
   text-align: center;
@@ -148,7 +149,11 @@ p .in-content-button:hover {
 }
 @media (max-width: 1200px) {
   .wrapper {
+    padding: 1em 0;
     flex-direction: column;
+  }
+  .resize {
+    width: 65%;
   }
   .section-title {
     font-size: 1.8rem;
@@ -160,6 +165,16 @@ p .in-content-button:hover {
   }
 }
 @media (max-width: 800px) {
+  .resize {
+    width: 100%;
+  }  
+  .float-left,
+  .float-right {
+    float: none;
+    display: flex;
+    margin: 0 0 .5em 0;
+    width: 100%;
+  }
   .section-title {
     font-size: 1.5rem;
   }
@@ -182,7 +197,7 @@ p .in-content-button:hover {
   .text-content p,
   .text-content li,
   .text-content ul {
-    font-size: .8rem;
+    font-size: .9rem;
   }
   .header {
     font-size: 1rem;
@@ -190,6 +205,6 @@ p .in-content-button:hover {
 }
 @media (max-width: 400px) {
   .header {
-    font-size: .8rem;
+    font-size: .75rem;
   }
 }

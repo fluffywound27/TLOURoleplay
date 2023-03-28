@@ -57,6 +57,11 @@
   width: 30%;
 }
 /* Media Querys*/
+@media (max-width: 800px) {
+  .social-bar p {
+    font-size: 1.3rem; 
+  }
+}
 /* VIEWPORT 650PX */
 @media (max-width: 650px) {
   .footer-join-button {
@@ -92,10 +97,10 @@
 /* VIEWPORT 400PX */
 @media (max-width: 400px) {
   .footer-join-button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .social-bar p {
-    min-width: 280px;
+    min-width: 260px;
     font-size: .75rem;
   }
   .server-info h2 {
